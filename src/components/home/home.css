@@ -145,8 +145,8 @@ a {
 }
 
 .imgs:hover {
-    opacity: 95%;
-    transform: scale(1.2);
+    /* opacity: 95%; */
+    transform: scale(1.06);
 }
 
 
