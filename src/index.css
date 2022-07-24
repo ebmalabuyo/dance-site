@@ -6,8 +6,9 @@ html,body {
 /* overflow: scroll; */
 -webkit-overflow-scrolling: touch; 
 height: -webkit-fill-available;
-overflow-x: hidden
+overflow-x: hidden;
 /* height: 100vh; */
+scroll-behavior: smooth;
 ;
 
 }
