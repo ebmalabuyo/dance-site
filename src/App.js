@@ -5,13 +5,15 @@ import Nav from "./components/navigation/nav.js"
 import Home from "./components/home/home.js"
 import About from "./components/about/about.js"
 import Illuminate from "./components/illuminate/illuminate.js"
+import Wrapper from './ScrollToTop';
+
+function App() {
 
 
-class App extends React.Component {
-  render() {
     return (
 
       <Router>
+        <Wrapper>
         <Nav/>
 
         <Routes>
@@ -19,10 +21,10 @@ class App extends React.Component {
             <Route path = "/about" element = {<About />} />
             <Route path = "/illuminate" element = {<Illuminate />} />
         </Routes>
+        </Wrapper>
       </Router>
       
     )
-  }
 }
 
 export default App;

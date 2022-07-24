@@ -22,7 +22,7 @@ nav {
 
 
 .nav-items {
-    display: flex;
+    display: none;
     gap: 1.5rem;
     list-style-type: none;
     margin-right: 3rem;
@@ -36,11 +36,13 @@ nav {
 }
 
 .menu-bars {
+    /* outline: solid green; */
     position: absolute;
-    right:0;
-    top:0;
-    padding: 5em;
+    right: 8%;
+    top:2;
     color: white;
+
+
 }
 
 .logo {
@@ -56,6 +58,11 @@ nav {
     width: 4rem;
     border-radius: 50% ;
 }
+
+a p {
+    color: white;
+}
+
 
 @media screen and (max-width: 860px) {
     .nav-items {
@@ -73,3 +80,8 @@ nav {
         margin-left: 0rem;
     }
 }
+
+@media screen and (min-width: 860px) {
+    .overlay {display: none;
+    }
+    }
