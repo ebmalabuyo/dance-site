@@ -5,6 +5,7 @@ import hhcc from "../../image/hhcc.jpg"
 import aboutlogo from "../../image/aboutlogo.jpg"
 import { useSpring, animated } from "react-spring"
 import {ScrollContainer, ScrollPage, Animator, batch, Move} from "react-scroll-motion"
+import Footy from "../footy/footy";
 
 function About() {
     const items = [
@@ -58,9 +59,10 @@ const styles1 = useSpring({
             })
             
             }
-                   
+ 
                 </ScrollPage>
             </ScrollContainer>
+            <Footy />
         </div>
         
     )
