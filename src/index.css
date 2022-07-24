@@ -3,7 +3,7 @@
 @tailwind utilities; */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html,body {
-overflow: scroll;
+/* overflow: scroll; */
 -webkit-overflow-scrolling: touch; 
 height: -webkit-fill-available;
 overflow-x: hidden

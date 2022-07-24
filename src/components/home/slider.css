@@ -49,11 +49,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    opacity: 25%;
+    opacity: .25;
   }
 
   .btn-slide:hover {
-    opacity: 85%;
+    opacity: .85;
   }
   
   .btn-slide img {
