@@ -48,7 +48,6 @@
 }
 
 iframe {
-    outline: solid rgb(109, 108, 108);
     width: min(32em, 115%);
     height: 16.7em;
     border-radius: 7%;
@@ -121,7 +120,6 @@ a {
     cursor: pointer;
     transition: transform 0.2s;
     box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, .8);
-    outline: solid #21222A;
 }
 
 .imgs:hover {
