@@ -23,5 +23,6 @@ body, html, * {
 body {
 background-color: #282D35;
 position: fixed;
+width: 100vw;
 
 }

@@ -11,7 +11,7 @@ export default function Slide2() {
                 <div className="content">
                 
                     <div className="content-text">
-                    <h2 className="gic">Growth in Community, Community in Growth</h2>
+                    <p className="gic">Growth in Community, Community in Growth</p>
                     <br/>
                     <p>We are United Movement, Cal Poly's non-audition dance team. We serve to foster an inclusive, safe environment where people of all backgrounds are welcome to grow together as dancers and individuals.</p>
                     <h2 className="about-button"><Link to= "/about">About Us</Link></h2>

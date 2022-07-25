@@ -71,19 +71,19 @@
 }
 .text-content {
     color: white;
-    max-width: min(42rem, 80%);
+    max-width: min(42rem, 90%);
     letter-spacing: .15rem;
     line-height: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
     text-align: center;
 }
 
 @media screen and (max-width: 730px) {
     #hhcc {
-        width: 27%;
+        width: 35%;
     }
     #about-logo {
         display: none;

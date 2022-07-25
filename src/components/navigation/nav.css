@@ -22,6 +22,7 @@ nav {
 
 .overlaycont {
     display: none;
+    width: 200vw;
 }
 
 .nav-items {
