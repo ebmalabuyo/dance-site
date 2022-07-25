@@ -6,6 +6,7 @@ import aboutlogo from "../../image/aboutlogo.jpg"
 // import {ScrollContainer, ScrollPage, Animator, batch, Move} from "react-scroll-motion"
 import Footy from "../footy/footy";
 import Banner from "../banner";
+import BackToTopButton from "../backToTopButton";
 
 function About() {
     const items = [
@@ -45,7 +46,9 @@ function About() {
                 )
             })
             }
+        <BackToTopButton />
         <Footy />
+        
         </div>
     )
         }

@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-html,body {
+html {
 -webkit-overflow-scrolling: touch; 
 height: -webkit-fill-available;
 overflow-x: hidden;
-scroll-behavior: smooth;
 ;
 
 }
+body {
+    background-color: #282D35;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    }
+
 * {
     box-sizing: border-box;
 }
@@ -14,15 +21,18 @@ scroll-behavior: smooth;
 body, html, * {
     padding: 0;
     margin: 0;
- 
 }
-/* * {
-    outline: solid red;
-}  */
 
-body {
-background-color: #282D35;
-position: fixed;
-width: 100vw;
+.arrowup {
+    display: none
+
+}
+
+@media screen and (max-width: 800px){
+
+.arrowup {
+    display: block
+
+}
 
 }

@@ -15,18 +15,22 @@ const Nav = () => {
     }
 
     const overlayContainer = {
-        transform: toggle ? 'translate(10%, 79%)' : 'translate(200%, 78%)',
+        transform: toggle ? 'translate(1%, 79%)' : 'translate(1%, 0%)',
+        opacity: toggle ? '1' : '0',
         zIndex: '1',
         backgroundColor: '#21222A',
         padding: '.9rem',
         borderRadius: '4%',
-        transition: 'transform 0.4s ease-in-out',
+        transition: 'all 0.3s ease-in-out',
         // boxShadow: '0px 2.98256px 7.4564px rgba(0.3, .2, 0.5, .2)',
+        // width: '100%',
+        // textAlign: 'center'
     }
 
     const NavBarsRotate = {
-        transform: toggle ? 'rotate(-90deg)' : 'rotate(0deg)',
-        transition: 'transform 0.4s'
+        transform: toggle ? 'rotate(90deg)' : 'rotate(0deg)',
+        transition: 'transform 0.1s ease-in',
+        zIndex: '2'
     }
     
     function activateNav() {
