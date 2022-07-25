@@ -12,15 +12,16 @@ function App() {
 
     return (
       <Router>
-          <ScrollToTop/>
-          <Nav/>
-          <Routes>
-              <Route path = "/" element = {<Home />} />
-              <Route path = "/about" element = {<About />} />
-              <Route path = "/illuminate" element = {<Lluminate />} />
-              <Route path = "/contact" element = {<Contact />} />
-          </Routes>
-      </Router>
+            <ScrollToTop />
+            <Nav/>
+            <Routes>
+                <Route path = "/" element = {<Home />} />
+                <Route path = "/about" element = {<About />} />
+                <Route path = "/illuminate" element = {<Lluminate />} />
+                <Route path = "/contact" element = {<Contact />} />
+            </Routes>
+
+        </Router>
       
     )
 }
