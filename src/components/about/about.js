@@ -3,9 +3,9 @@ import "./about.css"
 import Desc from "./desc";
 import hhcc from "../../image/hhcc.jpg"
 import aboutlogo from "../../image/aboutlogo.jpg"
-import { useSpring, animated } from "react-spring"
 // import {ScrollContainer, ScrollPage, Animator, batch, Move} from "react-scroll-motion"
 import Footy from "../footy/footy";
+import Banner from "../banner";
 
 function About() {
     const items = [
@@ -25,22 +25,15 @@ function About() {
         }
     ]
 
-const styles1 = useSpring({
-    from: {opacity: 0},
-    to: { opacity: 1},
-    config: {duration: 1000}
-})
 
     return(
         <div className="about-cont">
-            <animated.div style = {styles1}>
-                        <div className="about-top">
-                            <p className="about-title">About Us</p>
-                        </div>
-            </animated.div>
+            <Banner 
+                desc = 'About Us'
+                id = 'about-top'
+            />
             {items.map((item, index) => {
                 return (
-                    
                             <Desc 
                             id = {item.id}
                             background = {item.background}
@@ -49,15 +42,11 @@ const styles1 = useSpring({
                             title = {item.title}
                             desc = {item.desc}
                             />
-                   
                 )
             })
             }
-           
         <Footy />
         </div>
-       
-        
     )
         }
 

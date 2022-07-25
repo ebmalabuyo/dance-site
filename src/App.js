@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Nav from "./components/navigation/nav.js"
 import Home from "./components/home/home.js"
 import About from "./components/about/about.js"
-import Illuminate from "./components/illuminate/illuminate.js"
+import Lluminate from "./components/illuminate/illuminate.js"
 import ScrollToTop from './ScrollToTop';
+import Contact from "./components/contacts/contacts.js"
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
           <Routes>
               <Route path = "/" element = {<Home />} />
               <Route path = "/about" element = {<About />} />
-              <Route path = "/illuminate" element = {<Illuminate />} />
+              <Route path = "/illuminate" element = {<Lluminate />} />
+              <Route path = "/contact" element = {<Contact />} />
           </Routes>
       </Router>
       

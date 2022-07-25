@@ -15,7 +15,7 @@ const Nav = () => {
     }
 
     const overlayContainer = {
-        transform: toggle ? 'translate(10%, 88%)' : 'translate(200%, 88%)',
+        transform: toggle ? 'translate(10%, 78%)' : 'translate(200%, 78%)',
         zIndex: '1',
         backgroundColor: '#21222A',
         padding: '.9rem',
@@ -46,6 +46,7 @@ const Nav = () => {
                 <li className="nav-routes"><Link  to = "/">Home</Link></li>
                 <li  className="nav-routes"><Link to = "/about">About</Link></li>
                 <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
+                <li  className="nav-routes"><Link to = "/contact">Contact</Link></li>
             </ul>
             <FaBars onClick = {activateNav} size={32} className="menu-bars" style={NavBarsRotate}/>
             <div style = {overlayContainer} className='overlaycont'>
@@ -53,6 +54,7 @@ const Nav = () => {
                     <li className="nav-routes"><Link to = "/">Home</Link></li>
                     <li  className="nav-routes"><Link to = "/about">About</Link></li>
                     <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
+                    <li  className="nav-routes"><Link to = "/contact">Contact</Link></li>
                 </ul>
             </div>
         </nav>

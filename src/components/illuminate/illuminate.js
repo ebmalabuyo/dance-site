@@ -1,12 +1,19 @@
 import React from "react";
+import Banner from "../banner";
+import "./illuminate.css"
 
-
-function Illuminate() {
+function Lluminate() {
     return(
-        <div>
-            Illuminate
+        <div className="illuminate-page">
+            <Banner 
+                desc = 'Illuminate'
+                id = 'illuminate-banner'
+            />
+            <div>
+                test
+            </div>
         </div>
     )
 }
 
-export default Illuminate
+export default Lluminate

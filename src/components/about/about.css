@@ -3,25 +3,28 @@
     
 }
 
-.about-top {
+.top {
     max-width: 100%;
     height: 25em;
     outline: solid;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../../image/sick.JPG');
     background-position: center;
     font-family: 'Bebas Neue';
     position: relative;
 }
 
+#about-top {
+    background-image: url('../../image/sick.JPG');
+}
+
 .about-title {
     color: white;
     position: absolute;
-    left: 17%;
+    left: 21%;
     letter-spacing: .3rem;
     font-size: 4rem;
-    top: 15%;
+    top: 26%;
     /* background-color: #282D35; */
     padding: .4rem;
     border-radius: 15%;
