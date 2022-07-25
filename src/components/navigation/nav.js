@@ -12,15 +12,6 @@ const Nav = () => {
         display:'flex',
         flexDirection: 'column',
         gap: '1rem '
-        // gap:'1rem',
-        // height: '100%',
-        // position:'absolute',
-        // left: '50%',
-        // top: '45%',
-        // transform: toggle ? 'translate(100%, 8%)' : 'translate(300%, 8%)',
-        // transition: 'transform 0.6s ease',
-        // backgroundColor: 'red',
-        // zIndex: '1'
     }
 
     const overlayContainer = {
@@ -52,14 +43,14 @@ const Nav = () => {
                 </Link>
             </div>
             <ul className="nav-items">
-                <li className="nav-routes"><Link to = "/">Home</Link></li>
+                <li className="nav-routes"><Link  to = "/">Home</Link></li>
                 <li  className="nav-routes"><Link to = "/about">About</Link></li>
                 <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
             </ul>
             <FaBars onClick = {activateNav} size={32} className="menu-bars" style={NavBarsRotate}/>
             <div style = {overlayContainer} className='overlaycont'>
                 <ul style={overlayStyle}>
-                    <li OnClick= {toggleNav} className="nav-routes"><Link  to = "/">Home</Link></li>
+                    <li className="nav-routes"><Link to = "/">Home</Link></li>
                     <li  className="nav-routes"><Link to = "/about">About</Link></li>
                     <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
                 </ul>
