@@ -33,7 +33,7 @@ function scrollUp() {
                     position: 'fixed', 
                     bottom: '18%',
                     right: '4%',
-                    width: '40px',
+                    width: '.9em',
                     fontSize: '2rem',
                     zIndex: '1',
                     borderRadius:'35%',

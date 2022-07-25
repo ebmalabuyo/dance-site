@@ -15,13 +15,13 @@ const Nav = () => {
     }
 
     const overlayContainer = {
-        transform: toggle ? 'translate(1%, 79%)' : 'translate(1%, 0%)',
+        transform: toggle ? 'translate(1%, 79%)' : 'translate(1%, -80%)',
         opacity: toggle ? '1' : '0',
         zIndex: '1',
         backgroundColor: '#21222A',
         padding: '.9rem',
         borderRadius: '4%',
-        transition: 'all 0.3s ease-in-out',
+        transition: 'all 0.35s ease-in-out',
         // boxShadow: '0px 2.98256px 7.4564px rgba(0.3, .2, 0.5, .2)',
         // width: '100%',
         // textAlign: 'center'
