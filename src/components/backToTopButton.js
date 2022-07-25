@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import arrowup from "../image/arrow-up.svg"
+import arrow from "../components/home/icons/right-arrow.svg"
 
 function BackToTopButton() {
     const [topButton, setTopButton] = useState(false)
@@ -27,25 +27,29 @@ function scrollUp() {
     return (
         <div className="button-container">
             {topButton &&
-            <arrowup 
-                className='arrowup'
-                style ={{
-                    position: 'fixed', 
-                    bottom: '18%',
-                    right: '4%',
-                    width: '.9em',
-                    fontSize: '2rem',
-                    zIndex: '1',
-                    borderRadius:'35%',
-                    outline: 'solid',
-                    opacity:'0.5',
-                    transform: 'rotate(-90deg)',
-                    color: '#21222A',
-                    backgroundColor: 'white',
-                    marginLeft: '2%'
-                    }}
-                onClick={scrollUp}>
-            ></arrowup>
+            <button
+            className="arrowup"
+            onClick={scrollUp}
+            style ={{
+                position: 'fixed', 
+                bottom: '18%',
+                right: '4%',
+                width: '2.5rem',
+                zIndex: '1',
+                borderRadius:'50%',
+                opacity:'0.4',
+                height: '2.5rem',
+                transform: 'rotate(-90deg)',
+                padding: '0.5rem'
+                }}
+            >
+                <img
+                    alt = ''
+                    src= {arrow}
+                    />
+                    
+    
+            </button>
             }
         </div>
     )
