@@ -4,7 +4,7 @@ import Desc from "./desc";
 import hhcc from "../../image/hhcc.jpg"
 import aboutlogo from "../../image/aboutlogo.jpg"
 import { useSpring, animated } from "react-spring"
-import {ScrollContainer, ScrollPage, Animator, batch, Move} from "react-scroll-motion"
+// import {ScrollContainer, ScrollPage, Animator, batch, Move} from "react-scroll-motion"
 import Footy from "../footy/footy";
 
 function About() {
@@ -32,19 +32,15 @@ const styles1 = useSpring({
 })
 
     return(
-        
         <div className="about-cont">
             <animated.div style = {styles1}>
                         <div className="about-top">
                             <p className="about-title">About Us</p>
                         </div>
             </animated.div>
-            <ScrollContainer>
-                <ScrollPage>
-                    
             {items.map((item, index) => {
                 return (
-                    <Animator animation={batch(Move())}>
+                    
                             <Desc 
                             id = {item.id}
                             background = {item.background}
@@ -53,17 +49,14 @@ const styles1 = useSpring({
                             title = {item.title}
                             desc = {item.desc}
                             />
-                     </Animator>
-                    
+                   
                 )
             })
-            
             }
- 
-                </ScrollPage>
-            </ScrollContainer>
-            <Footy />
+           
+        <Footy />
         </div>
+       
         
     )
         }

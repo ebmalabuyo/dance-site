@@ -2,7 +2,7 @@
 
 /* * {
     outline: solid red;
-} */
+}  */
 
 nav {
     padding: 1rem;
@@ -20,9 +20,12 @@ nav {
     height: 6em;
 }
 
+.overlaycont {
+    display: none;
+}
 
 .nav-items {
-    display: none;
+    display: flex;
     gap: 1.5rem;
     list-style-type: none;
     margin-right: 3rem;
@@ -38,17 +41,22 @@ nav {
 .menu-bars {
     /* outline: solid green; */
     position: absolute;
-    right: 8%;
+    right: 2%;
     top:2;
     color: white;
 
 
 }
 
+.menu-bars {
+    display: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: 50%;
     margin-left: 1.5em;
     font-weight: 200;
     font-size: 1.5em;
@@ -62,7 +70,6 @@ nav {
 a p {
     color: white;
 }
-
 
 @media screen and (max-width: 860px) {
     .nav-items {
@@ -81,7 +88,16 @@ a p {
     }
 }
 
-@media screen and (min-width: 860px) {
-    .overlay {display: none;
+@media screen and (max-width: 860px) {
+    .overlaycont {display: block;
+    }
+
+    .menu-bars {
+        display: block;
+        /* outline: solid green; */
+    }
+
+    .nav-items {
+        display: none;
     }
     }

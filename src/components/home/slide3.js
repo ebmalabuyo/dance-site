@@ -3,6 +3,17 @@ import workshop from "../../image/Workshop.png"
 import performances from "../../image/performances.JPG"
 import lume from "../../image/lume.jpg"
 
+function Card(props) {
+    return (
+    
+        <div className="card-cont">
+            <p className="card-titles">{props.title}</p>
+            <a href = {props.link} className="img-cont">
+                <img alt = '' className = "imgs"src = {props.img}></img>
+            </a> 
+        </div>
+    )
+}
 
 export default function Slide3() {
 
@@ -25,33 +36,20 @@ export default function Slide3() {
             link: "https://www.youtube.com/watch?v=FHQx33jxBsE&t=5655s"
         }
     ]
+
     return (
         <div className="slide3">
             <div className="main-slide3">
-            {cardlist.map(item => {
-                return (
-                    <Card 
-                        img = {item.img}
-                        title = {item.title}
-                        link = {item.link}
-                    />
-                )
-            })}
+                    {cardlist.map(item => {
+                        return (
+                            <Card 
+                                img = {item.img}
+                                title = {item.title}
+                                link = {item.link}
+                            />
+                        )
+                    })}
             </div>
-        </div>
-    )
-}
-
-
-
-function Card(props) {
-    return (
-    
-        <div className="card-cont">
-            <p className="card-titles">{props.title}</p>
-            <a href = {props.link} className="img-cont">
-                <img alt = '' className = "imgs"src = {props.img}></img>
-            </a> 
         </div>
     )
 }

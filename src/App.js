@@ -9,18 +9,15 @@ import Wrapper from './ScrollToTop';
 
 function App() {
 
-
     return (
-
       <Router>
         <Wrapper>
-        <Nav/>
-
-        <Routes>
-            <Route path = "/" element = {<Home />} />
-            <Route path = "/about" element = {<About />} />
-            <Route path = "/illuminate" element = {<Illuminate />} />
-        </Routes>
+          <Nav/>
+          <Routes>
+              <Route path = "/" element = {<Home />} />
+              <Route path = "/about" element = {<About />} />
+              <Route path = "/illuminate" element = {<Illuminate />} />
+          </Routes>
         </Wrapper>
       </Router>
       

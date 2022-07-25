@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
 import "./nav.css"
 import pic from "../../image/um_logo.png"
 import {FaBars} from "react-icons/fa"
@@ -9,27 +9,39 @@ const Nav = () => {
 
     const overlayStyle = {
         listStyle: 'none',
-        position: 'absolute',
-        left: '50%',
-        top: '45%',
-        transform: 'translate(-50%, -50%)'
+        display:'flex',
+        flexDirection: 'column',
+        gap: '1rem '
+        // gap:'1rem',
+        // height: '100%',
+        // position:'absolute',
+        // left: '50%',
+        // top: '45%',
+        // transform: toggle ? 'translate(100%, 8%)' : 'translate(300%, 8%)',
+        // transition: 'transform 0.6s ease',
+        // backgroundColor: 'red',
+        // zIndex: '1'
+    }
+
+    const overlayContainer = {
+        transform: toggle ? 'translate(10%, 88%)' : 'translate(200%, 88%)',
+        zIndex: '1',
+        backgroundColor: '#21222A',
+        padding: '.9rem',
+        borderRadius: '3%',
+        transition: 'transform 0.4s ease-in-out',
+        boxShadow: '0px 2.98256px 7.4564px rgba(0.3, .2, 0.5, .2)',
+        width: '50%'
     }
 
     const NavBarsRotate = {
-        transform: toggle ? 'rotate(90deg)' : 'rotate(0deg)',
+        transform: toggle ? 'rotate(-90deg)' : 'rotate(0deg)',
         transition: 'transform 0.4s'
     }
     
     function activateNav() {
         toggleNav(prev => !prev)
     }
-
-    // const contStyle = {
-    //     height: toggle ? '91vh' : '0',
-    //     width: '100vw',
-    //     backgroundColor: 'blue',
-    //     transition: 'height 0.4s ease-in-out'
-    // }
 
     return (
         <nav>
@@ -45,14 +57,13 @@ const Nav = () => {
                 <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
             </ul>
             <FaBars onClick = {activateNav} size={32} className="menu-bars" style={NavBarsRotate}/>
-            <div className='overlay'>
-            <ul style={overlayStyle}>
-                <li className="nav-routes"><Link to = "/">Home</Link></li>
-                <li  className="nav-routes"><Link to = "/about">About</Link></li>
-                <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
-            </ul>
+            <div style = {overlayContainer} className='overlaycont'>
+                <ul style={overlayStyle}>
+                    <li OnClick= {toggleNav} className="nav-routes"><Link  to = "/">Home</Link></li>
+                    <li  className="nav-routes"><Link to = "/about">About</Link></li>
+                    <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
+                </ul>
             </div>
-
         </nav>
     )
 }
