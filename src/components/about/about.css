@@ -28,8 +28,8 @@
     /* background-color: #282D35; */
     padding: .4rem;
     border-radius: 15%;
-    -webkit-text-stroke-width: .6px;
-    -webkit-text-stroke-color: black;
+    /* -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: black; */
 }
 
 @media screen and (max-width: 420px) {
