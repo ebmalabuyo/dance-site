@@ -15,7 +15,7 @@ const Nav = () => {
     }
 
     const overlayContainer = {
-        transform: toggle ? 'translate(13%, 74%)' : 'translate(13%, -80%)',
+        transform: toggle ? 'translate(11%, 74%)' : 'translate(11%, -80%)',
         opacity: toggle ? '1' : '0',
         zIndex: '1',
         backgroundColor: '#21222A',
