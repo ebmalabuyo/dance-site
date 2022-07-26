@@ -15,11 +15,11 @@ const Nav = () => {
     }
 
     const overlayContainer = {
-        transform: toggle ? 'translate(1%, 79%)' : 'translate(1%, -80%)',
+        transform: toggle ? 'translate(13%, 74%)' : 'translate(13%, -80%)',
         opacity: toggle ? '1' : '0',
         zIndex: '1',
         backgroundColor: '#21222A',
-        padding: '.9rem',
+        padding: '.7rem',
         borderRadius: '4%',
         transition: 'all 0.35s ease-in-out',
         // boxShadow: '0px 2.98256px 7.4564px rgba(0.3, .2, 0.5, .2)',
@@ -51,16 +51,20 @@ const Nav = () => {
             <ul className="nav-items">
                 <li className="nav-routes"><Link  to = "/">Home</Link></li>
                 <li  className="nav-routes"><Link to = "/about">About</Link></li>
+                <li  className="nav-routes"><Link to = "/community">Community</Link></li>
                 <li  className="nav-routes"><Link to = "/illuminate">Illuminate</Link></li>
                 <li  className="nav-routes"><Link to = "/contact">Contact</Link></li>
+                
             </ul>
             <FaBars onClick = {activateNav} size={32} className="menu-bars" style={NavBarsRotate}/>
             <div style = {overlayContainer} className='overlaycont'>
                 <ul style={overlayStyle}>
                     <li className="nav-routes"><Link onClick={closeNav} to = "/">Home</Link></li>
                     <li  className="nav-routes"><Link onClick={closeNav} to = "/about">About</Link></li>
+                    <li  className="nav-routes"><Link onClick={closeNav} to = "/community">Community</Link></li>
                     <li  className="nav-routes"><Link onClick={closeNav} to = "/illuminate">Illuminate</Link></li>
                     <li  className="nav-routes"><Link onClick={closeNav} to = "/contact">Contact</Link></li>
+                    
                 </ul>
             </div>
         </nav>

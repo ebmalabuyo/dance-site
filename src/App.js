@@ -7,6 +7,7 @@ import About from "./components/about/about.js"
 import Lluminate from "./components/illuminate/illuminate.js"
 import ScrollToTop from './ScrollToTop';
 import Contact from "./components/contacts/contacts.js"
+import Community from './components/community/community';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Routes>
                 <Route path = "/" element = {<Home />} />
                 <Route path = "/about" element = {<About />} />
+                <Route path = "/community" element = {<Community />} />
                 <Route path = "/illuminate" element = {<Lluminate />} />
                 <Route path = "/contact" element = {<Contact />} />
             </Routes>
