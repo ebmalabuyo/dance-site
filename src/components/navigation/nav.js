@@ -11,7 +11,7 @@ const Nav = () => {
         listStyle: 'none',
         display:'flex',
         flexDirection: 'column',
-        gap: '1rem ',
+        gap: '.7rem ',
     }
 
     const overlayContainer = {
@@ -19,9 +19,10 @@ const Nav = () => {
         opacity: toggle ? '1' : '0',
         zIndex: '1',
         backgroundColor: '#21222A',
-        padding: '.7rem',
+        padding: '.5rem',
         borderRadius: '4%',
         transition: 'all 0.35s ease-in-out',
+        height: '10.2em'
         // boxShadow: '0px 2.98256px 7.4564px rgba(0.3, .2, 0.5, .2)',
         // width: '100%',
         // textAlign: 'center'
