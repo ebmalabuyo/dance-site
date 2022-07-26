@@ -21,13 +21,22 @@
 .about-title {
     color: white;
     position: absolute;
-    left: 21%;
+    left: 17%;
     letter-spacing: .3rem;
-    font-size: 4rem;
-    top: 26%;
+    font-size: 3.8rem;
+    top: 33%;
     /* background-color: #282D35; */
     padding: .4rem;
     border-radius: 15%;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: black;
+}
+
+@media screen and (max-width: 420px) {
+    .about-title {
+        top:10%;
+        left: 5%
+    }
 }
 
 .about-top-pic {

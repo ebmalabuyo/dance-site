@@ -11,7 +11,7 @@ const Nav = () => {
         listStyle: 'none',
         display:'flex',
         flexDirection: 'column',
-        gap: '.7rem ',
+        gap: '1rem ',
     }
 
     const overlayContainer = {
@@ -22,7 +22,7 @@ const Nav = () => {
         padding: '.5rem',
         borderRadius: '4%',
         transition: 'all 0.35s ease-in-out',
-        height: '10.2em'
+        height: '11.1em'
         // boxShadow: '0px 2.98256px 7.4564px rgba(0.3, .2, 0.5, .2)',
         // width: '100%',
         // textAlign: 'center'
@@ -30,7 +30,7 @@ const Nav = () => {
 
     const NavBarsRotate = {
         transform: toggle ? 'rotate(90deg)' : 'rotate(0deg)',
-        transition: 'transform 0.1s ease-in',
+        transition: 'transform 0.15s ease-in',
         zIndex: '2'
     }
     

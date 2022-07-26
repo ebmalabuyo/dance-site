@@ -1,10 +1,15 @@
 import React from "react"
-
+import Banner from "../banner"
+import "./community.css"
 
 export default function Community() {
     return (
         <div>
-            Community
+            <Banner 
+                desc = 'Community'
+                id = 'community-banner'
+
+            />
         </div>
     )
 }
